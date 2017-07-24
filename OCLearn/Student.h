@@ -19,4 +19,5 @@
 
 @property (retain, nonatomic) Book *book;
 @property (nonatomic, getter=isRich) BOOL rich;
+- (void)test3;
 @end

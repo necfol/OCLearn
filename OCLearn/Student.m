@@ -9,9 +9,14 @@
 #import "Book.h"
 @implementation Student
 #pragma mark 年龄getter
-- (int)age {
-    return _age * 100;
++ (void)test2 {
+    NSLog(@"调用test2");
 }
+
+- (void)test3 {
+    [Student test2];
+}
+
 
 #pragma mark 回收
 - (void)dealloc
