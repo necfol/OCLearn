@@ -15,4 +15,10 @@
 -(void)click {
     [_delegate onclick];
 }
+
+-(void)dealloc {
+    NSLog(@"stu销毁");
+    [_delegate release];
+    [super dealloc];
+}
 @end

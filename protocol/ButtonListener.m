@@ -13,4 +13,8 @@
 - (void)onclick {
     NSLog(@"click");
 }
+-(void)dealloc {
+    NSLog(@"btn销毁");
+    [super dealloc];
+}
 @end
