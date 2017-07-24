@@ -8,16 +8,20 @@
 
 #import <Foundation/Foundation.h>
 #import "Student.h"
+#import "Book.h"
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         int age;
         //分配内存
         //Student *stu = [[Student alloc] init];
         Student *stu = [Student new];
+        Book *book = [Book new];
         stu.age = 100;
-        age = stu.age;
-        NSLog(@"年龄%i", age);
-        
+        stu.book = book;
+        NSUInteger count = [stu retainCount];
+        NSLog(@"releaseCount=%lu", count);
+        [stu release];
+        [book release];
         
     }
     return 0;

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F12D41DB1F23473C00D173B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F12D41DA1F23473C00D173B9 /* main.m */; };
 		F12D41E41F2349DB00D173B9 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = F12D41E31F2349DB00D173B9 /* Student.m */; };
+		F1E0A9281F258DDF0074403C /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E0A9271F258DDF0074403C /* Book.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		F12D41DA1F23473C00D173B9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F12D41E21F2349DB00D173B9 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
 		F12D41E31F2349DB00D173B9 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		F1E0A9261F258DDF0074403C /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		F1E0A9271F258DDF0074403C /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 				F12D41DA1F23473C00D173B9 /* main.m */,
 				F12D41E21F2349DB00D173B9 /* Student.h */,
 				F12D41E31F2349DB00D173B9 /* Student.m */,
+				F1E0A9261F258DDF0074403C /* Book.h */,
+				F1E0A9271F258DDF0074403C /* Book.m */,
 			);
 			path = OCLearn;
 			sourceTree = "<group>";
@@ -125,6 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F12D41DB1F23473C00D173B9 /* main.m in Sources */,
+				F1E0A9281F258DDF0074403C /* Book.m in Sources */,
 				F12D41E41F2349DB00D173B9 /* Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,6 +230,7 @@
 		F12D41DF1F23473C00D173B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -231,6 +238,7 @@
 		F12D41E01F23473C00D173B9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -254,6 +262,7 @@
 				F12D41E01F23473C00D173B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
