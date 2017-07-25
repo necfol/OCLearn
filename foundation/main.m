@@ -35,12 +35,24 @@ void stringCreat() {
     }
     NSError * err1;
     NSURL *url = [NSURL URLWithString:@"http://www.baidu.com"];
-    NSString *str4 = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:err1];
+    NSString *str4 = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:&err1];
     if(err1) {
         NSLog(@"读取url文件失败%@", err1);
     } else {
         NSLog(@"url文件读取内容%@", str4);
     }
+    
+    //写文件
+    NSString *str5 = @"新文件内容";
+    NSString *path1 = @"/Users/scofield/Desktop/test.txt";
+    NSError * err2 = nil;
+    [str5 writeToFile:path1 atomically:YES encoding:NSUTF8StringEncoding error:&err2];
+    if(err2) {
+        NSLog(@"写入文件失败%@", err2);
+    } else {
+        NSLog(@"文件写入成功");
+    }
+    
 }
 
 void testStrFunc(NSString **str);
