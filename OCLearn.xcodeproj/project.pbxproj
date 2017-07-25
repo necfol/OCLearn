@@ -15,6 +15,7 @@
 		F1E0A9361F26186A0074403C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E0A9351F26186A0074403C /* main.m */; };
 		F1E0A93C1F2618900074403C /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E0A93B1F2618900074403C /* Student.m */; };
 		F1E0A9411F26236B0074403C /* ButtonListener.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E0A9401F26236B0074403C /* ButtonListener.m */; };
+		F1E0A9491F263A120074403C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E0A9481F263A120074403C /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,15 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		F1E0A9311F26186A0074403C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		F1E0A9441F263A120074403C /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -57,6 +67,8 @@
 		F1E0A93E1F2619D20074403C /* Learn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Learn.h; sourceTree = "<group>"; };
 		F1E0A93F1F26236B0074403C /* ButtonListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonListener.h; sourceTree = "<group>"; };
 		F1E0A9401F26236B0074403C /* ButtonListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonListener.m; sourceTree = "<group>"; };
+		F1E0A9461F263A120074403C /* foundation */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = foundation; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1E0A9481F263A120074403C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +86,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F1E0A9431F263A120074403C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -82,6 +101,7 @@
 			children = (
 				F12D41D91F23473C00D173B9 /* OCLearn */,
 				F1E0A9341F26186A0074403C /* protocol */,
+				F1E0A9471F263A120074403C /* foundation */,
 				F12D41D81F23473C00D173B9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,6 +111,7 @@
 			children = (
 				F12D41D71F23473C00D173B9 /* OCLearn */,
 				F1E0A9331F26186A0074403C /* protocol */,
+				F1E0A9461F263A120074403C /* foundation */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,6 +144,14 @@
 				F1E0A9401F26236B0074403C /* ButtonListener.m */,
 			);
 			path = protocol;
+			sourceTree = "<group>";
+		};
+		F1E0A9471F263A120074403C /* foundation */ = {
+			isa = PBXGroup;
+			children = (
+				F1E0A9481F263A120074403C /* main.m */,
+			);
+			path = foundation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +191,23 @@
 			productReference = F1E0A9331F26186A0074403C /* protocol */;
 			productType = "com.apple.product-type.tool";
 		};
+		F1E0A9451F263A120074403C /* foundation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1E0A94A1F263A120074403C /* Build configuration list for PBXNativeTarget "foundation" */;
+			buildPhases = (
+				F1E0A9421F263A120074403C /* Sources */,
+				F1E0A9431F263A120074403C /* Frameworks */,
+				F1E0A9441F263A120074403C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = foundation;
+			productName = foundation;
+			productReference = F1E0A9461F263A120074403C /* foundation */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -176,6 +222,10 @@
 						ProvisioningStyle = Automatic;
 					};
 					F1E0A9321F26186A0074403C = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					F1E0A9451F263A120074403C = {
 						CreatedOnToolsVersion = 8.3.3;
 						ProvisioningStyle = Automatic;
 					};
@@ -195,6 +245,7 @@
 			targets = (
 				F12D41D61F23473C00D173B9 /* OCLearn */,
 				F1E0A9321F26186A0074403C /* protocol */,
+				F1E0A9451F263A120074403C /* foundation */,
 			);
 		};
 /* End PBXProject section */
@@ -219,6 +270,14 @@
 				F1E0A9361F26186A0074403C /* main.m in Sources */,
 				F1E0A93C1F2618900074403C /* Student.m in Sources */,
 				F1E0A9411F26236B0074403C /* ButtonListener.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1E0A9421F263A120074403C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1E0A9491F263A120074403C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +405,22 @@
 			};
 			name = Release;
 		};
+		F1E0A94B1F263A120074403C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F1E0A94C1F263A120074403C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -374,6 +449,16 @@
 				F1E0A9391F26186A0074403C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1E0A94A1F263A120074403C /* Build configuration list for PBXNativeTarget "foundation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1E0A94B1F263A120074403C /* Debug */,
+				F1E0A94C1F263A120074403C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

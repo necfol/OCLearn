@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>foundation.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>protocol.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -23,6 +28,11 @@
 			<true/>
 		</dict>
 		<key>F1E0A9321F26186A0074403C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F1E0A9451F263A120074403C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
