@@ -16,7 +16,6 @@
 @interface Student : NSObject
 
 @property int age;
-
 @property (retain, nonatomic) Book *book;
 @property (nonatomic, getter=isRich) BOOL rich;
 - (void)test3;

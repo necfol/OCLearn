@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F12D41DB1F23473C00D173B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F12D41DA1F23473C00D173B9 /* main.m */; };
 		F12D41E41F2349DB00D173B9 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = F12D41E31F2349DB00D173B9 /* Student.m */; };
+		F18658241F28984B00D87BE3 /* NSArray+local.m in Sources */ = {isa = PBXBuildFile; fileRef = F18658231F28984B00D87BE3 /* NSArray+local.m */; };
 		F1E0A9281F258DDF0074403C /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E0A9271F258DDF0074403C /* Book.m */; };
 		F1E0A92B1F25C6A20074403C /* Student+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E0A92A1F25C6A20074403C /* Student+Test.m */; };
 		F1E0A92E1F25EC1C0074403C /* Button.m in Sources */ = {isa = PBXBuildFile; fileRef = F1E0A92D1F25EC1C0074403C /* Button.m */; };
@@ -53,6 +54,8 @@
 		F12D41DA1F23473C00D173B9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F12D41E21F2349DB00D173B9 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
 		F12D41E31F2349DB00D173B9 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		F18658221F28984B00D87BE3 /* NSArray+local.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+local.h"; sourceTree = "<group>"; };
+		F18658231F28984B00D87BE3 /* NSArray+local.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+local.m"; sourceTree = "<group>"; };
 		F1E0A9261F258DDF0074403C /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
 		F1E0A9271F258DDF0074403C /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
 		F1E0A9291F25C6A20074403C /* Student+Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Student+Test.h"; sourceTree = "<group>"; };
@@ -150,6 +153,8 @@
 			isa = PBXGroup;
 			children = (
 				F1E0A9481F263A120074403C /* main.m */,
+				F18658221F28984B00D87BE3 /* NSArray+local.h */,
+				F18658231F28984B00D87BE3 /* NSArray+local.m */,
 			);
 			path = foundation;
 			sourceTree = "<group>";
@@ -277,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F18658241F28984B00D87BE3 /* NSArray+local.m in Sources */,
 				F1E0A9491F263A120074403C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

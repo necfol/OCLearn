@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NSArray+local.h"
 
 #pragma mark NSString创建
 
@@ -53,15 +54,27 @@ void stringCreat() {
         NSLog(@"文件写入成功");
     }
     
+    NSRange range = [@"12345" rangeOfString:@"2"];
+    
+    NSLog(@"%@", NSStringFromRange(range));
+    
+    
+    
 }
 
 void testStrFunc(NSString **str);
+void testArrFunc() {
+    NSArray * arr = [NSArray arrayWithObject:@"我"];
+    NSArray *arr2 = [arr arrayByAddingObject:@"是"];
+    NSLog(@"arr2=%@", [arr2 descriptionWithLocale]);
+}
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        stringCreat();
-        NSString *teststr = @"111111";
-        testStrFunc(&teststr);
-        NSLog(@"teststr=%@", teststr);
+//        stringCreat();
+//        NSString *teststr = @"111111";
+//        testStrFunc(&teststr);
+//        NSLog(@"teststr=%@", teststr);
+        testArrFunc();
     }
     return 0;
 }

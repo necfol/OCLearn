@@ -27,6 +27,8 @@ int main(int argc, const char * argv[]) {
         [stu release];
         [book release];
  */
+//        Student *stu = [[Student new] autorelease];
+//        [stu age];
         Button *button = [[[Button alloc] init] autorelease];
         button.listener = ^(Button *button) {
             NSLog(@"触发click");
