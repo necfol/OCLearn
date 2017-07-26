@@ -10,9 +10,8 @@
 
 @implementation NSArray (local)
 
--(NSString *)descriptionWithLocale {
+-(NSString *)descriptionWithLocale:(id)locale {
     NSMutableString *str = [NSMutableString stringWithFormat:@"%lu (\n", (unsigned long)self.count];
-    NSLog(@"=======%@",str);
     for (id obj in self) {
         [str appendFormat:@"\t%@, \n", obj];
     }

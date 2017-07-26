@@ -66,7 +66,7 @@ void testStrFunc(NSString **str);
 void testArrFunc() {
     NSArray * arr = [NSArray arrayWithObject:@"我"];
     NSArray *arr2 = [arr arrayByAddingObject:@"是"];
-    NSLog(@"arr2=%@", [arr2 descriptionWithLocale]);
+    NSLog(@"arr2=%@", [arr2 descriptionWithLocale:nil]);
 }
 int main(int argc, const char * argv[]) {
     @autoreleasepool {

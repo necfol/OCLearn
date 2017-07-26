@@ -10,6 +10,6 @@
 
 @interface NSArray (local)
 
-- (NSString *)descriptionWithLocale;
+- (NSString *)descriptionWithLocale:(id)locale;
 
 @end
